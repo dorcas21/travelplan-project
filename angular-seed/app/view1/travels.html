@@ -1,0 +1,15 @@
+<body>
+<form ng-model="travel">
+<div>
+<ul class="list-group">
+    <li ng-repeat="travel in travels" class="list-group-item">
+        {{travel.travel_name.toUpperCase()}}
+        {{travel.meeting.toUpperCase()}}
+        <a href="#/signup/travels/edit/{{travel.id}}" class="btn btn-success">Edit</a>
+        &nbsp;&nbsp;
+        <button class="btn btn-primary" ng-click="delete(travel.id, $index)">Delete</button>
+    </li>
+</ul>
+</div>
+</form>
+</body>
