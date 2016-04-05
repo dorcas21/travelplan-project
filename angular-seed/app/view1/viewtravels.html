@@ -11,8 +11,8 @@
         <th>End Date</th>
         <th>Status </th>
         <th>View </th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>Confirm</th>
+        
         </th>
       </tr>
 </thead>
@@ -23,10 +23,10 @@
 		<td>{{travel.travel_meeting.toUpperCase()}}</td>
 		<td>{{travel.start_date.toUpperCase()}}</td>
 		<td>{{travel.end_date.toUpperCase()}}</td>
-		<td>{{travel.status.toUpperCase()}}</td>
-		<td> <a href="#/signup/travels/viewall/{{travel.id}}" class="btn btn-success">View</a></td>
-		<td><a href="#/signup/travels/edit/{{travel.id}}" class="btn btn-success">Edit</a></td>
-		<td><button class="btn btn-primary" ng-click="delete(travel.id, $index)">Delete</button></td>
+		<td>{{travel.status}}</td>
+		<td> <a href="#/signup/travels/viewalll/{{travel.id}}" class="btn btn-success">View</a></td>
+		<td><a href="#/signup/travels/viewalll/{{travel.id}}" class="btn btn-success">Confirm</a></td>
+		<!-- <td><button class="btn btn-primary" ng-click="delete(travel.id, $index)">Delete</button></td> -->
 
 
 	</tr>
@@ -84,3 +84,47 @@
       });
     });
   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+<form ng-model="travel">
+<div>
+<ul class="list-group">
+    <li ng-repeat="travel in travels" class="list-group-item">
+        {{travel.travel_name.toUpperCase()}}
+        {{travel.meeting.toUpperCase()}}
+        <!-- <a href="#/signup/travels/edit/{{travel.id}}" class="btn btn-success">Edit</a>
+        &nbsp;&nbsp;
+        <button class="btn btn-primary" ng-click="delete(travel.id, $index)">Delete</button>
+        &nbsp;&nbsp;
+ -->
+        <a href="#/signup/travels/editt/{{travel.id}}" class="btn btn-success">Confirm</a>
+       
+    </li>
+</ul>
+</div>
+</form>
+</body>

@@ -1,0 +1,50 @@
+<form ng-model="travel" ng-submit="gonext()"class="form-control">
+    <div class="form-group col-xs-4">
+        <label>Travel Name:</label>
+        <input type="text" class="form-control" placeholder="Travel name" readonly ng-model="travel.travel_name">
+
+    </div>
+    <div class="form-group col-xs-4">
+        <label>Meeting:</label>
+        <input type="text" class="form-control" placeholder="Meeting" readonly ng-model="travel.travel_meeting">
+    </div>
+
+    <div class="form-group col-xs-4">
+        <label>Venue:</label>
+        <input type="text" class="form-control" placeholder="Venue" readonly ng-model="travel.travel_venue">
+
+    </div>
+
+    <div class="form-group col-xs-4">
+        <label>Start Date:</label>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Start date" readonly ng-model="travel.start_date" uib-datepicker-popup='yyyy/MM/dd' is-open='popup.open'>
+
+             <!-- <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="openPopup()"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span> -->
+        </div>
+    </div>
+
+    <div class="form-group col-xs-4">
+        <label>End Date:</label>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="End date date" readonly ng-model="travel.end_date" uib-datepicker-popup='yyyy/MM/dd' is-open='popup1.open'>
+
+            <!--  <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="openPopup1()"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span> -->
+        </div>
+    </div>
+
+    <div class="form-group col-xs-4">
+        <label>Number Of Days:</label>
+        <input type="text" class="form-control" readonly placeholder="Number of days" ng-model="travel.travel_days">
+    </div>
+
+
+    <div class="form-group col-xs-4">
+        <input type="submit" class="btn btn-primary" value="Next">
+    </div>
+
+</form>

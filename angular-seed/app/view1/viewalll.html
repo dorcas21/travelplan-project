@@ -1,0 +1,166 @@
+<body>
+
+<div class='container'>
+<table class="table table-hover">
+    <thead>
+      <!-- <tr>
+        <th>Travel Name</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr> -->
+    </thead>
+    <tbody>
+      <tr>
+       <th>Travel Name</th>
+        <td>{{travel_name.toUpperCase()}}</td>
+        
+      </tr>
+      <tr>
+       <th>Meeting</th>
+        <td>{{travel_meeting.toUpperCase()}}</td>
+        
+      </tr>
+      <tr>
+       <th>Start Date</th>
+        <td>{{start_date}}</td>
+        
+      </tr>
+      <tr>
+       <th>End Date</th>
+        <td>{{end_date}}</td>
+     
+      </tr>
+
+      <tr>
+       <th>Status</th>
+        <td>{{status}}</td>
+     
+      </tr>
+
+      <tr>
+       <th>Venue</th>
+        <td>{{travel_venue}}</td>
+     
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+</div>
+
+<div class='container'>
+<table class="table table-hover">
+    <thead>
+      <!-- <tr>
+        <th>Travel Name</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr> -->
+    </thead>
+    <tbody>
+      <tr>
+       <th>Budget Line</th>
+        <td>{{budget_line}}</td>
+        
+      </tr>
+      <tr>
+       <th>Budget Cost</th>
+        <td>{{budget_cost}}</td>
+        
+      </tr>
+      <tr>
+       <th>Additional Cost</th>
+        <td>{{additional_cost}}</td>
+        
+      </tr>
+      <tr>
+       <th>Budget</th>
+        <td>{{budget}}</td>
+     
+      </tr>
+
+      <tr>
+       <th>Budget Balance</th>
+        <td>{{budget_balance}}</td>
+     
+      </tr>
+
+      <tr>
+       <th>Venue</th>
+        <td>{{travel_venue}}</td>
+     
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class='container'>
+
+<table class="table table-hover">
+    <thead>
+      <!-- <tr>
+        <th>Travel Name</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr> -->
+    </thead>
+    <tbody>
+      <tr>
+       <th>Justification</th>
+        <td>{{travel.justification}}</td>
+        
+      </tr>
+      <tr>
+       <th>Project Details</th>
+        <td>{{travel.project_details}}</td>
+        
+      </tr>
+      <tr>
+       <th>Region</th>
+        <td>{{travel.region}}</td>
+        
+      </tr>
+      <tr>
+       <th>Communication Details</th>
+        <td>{{travel.communication_details}}</td>
+     
+      </tr>
+
+      <tr>
+       <th>Date</th>
+        <td>{{travel.date}}</td>
+     
+      </tr>
+
+      <tr>
+       <th>Department</th>
+        <td>{{travel.department}}</td>
+     
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="form-group col-xs-4">
+        <a href='#/signup/travels/' class="btn btn-success">Back</a>
+    </div>
+
+<div class="form-group col-xs-4">
+        <input type="submit" class="btn btn-primary" ng-click="confirmTravel(travelID)" value="Confirm">
+    </div>    
+
+</body>
